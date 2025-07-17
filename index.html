@@ -13,15 +13,27 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        /* Adiciona uma animação de fade-in para o contêiner principal */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        /* Estilo para sombra de texto no título */
+        .text-shadow-lg {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+        }
     </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-4 relative">
     <!-- O logo foi removido daqui -->
 
-    <div class="bg-white rounded-xl shadow-2xl p-6 sm:p-8 md:p-10 max-w-md w-full mx-auto transform transition-all duration-300 hover:scale-[1.02]">
+    <div class="bg-white rounded-xl shadow-2xl p-6 sm:p-8 md:p-10 max-w-md w-full mx-auto transform transition-all duration-300 hover:scale-[1.02] animate-fade-in">
         <!-- Cabeçalho da página -->
         <header class="text-center mb-8">
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-3 leading-tight">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mb-3 leading-tight text-shadow-lg">
                 Conheça Nossos Agentes de IA - Chatvolt
             </h1>
             <p class="text-gray-600 text-base sm:text-lg">
@@ -34,9 +46,9 @@
             <!-- Bloco para Agente Lia -->
             <div class="flex flex-col items-center bg-blue-100 rounded-xl shadow-lg p-4 mb-4">
                 <a href="https://wa.me/5511944914630" target="_blank"
-                   class="flex flex-col items-center justify-center bg-blue-200 text-blue-800 py-4 px-6 rounded-lg w-full
-                          hover:bg-blue-300 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105
-                          focus:outline-none focus:ring-4 focus:ring-blue-100">
+                   class="flex flex-col items-center justify-center bg-blue-300 text-blue-900 py-4 px-6 rounded-lg w-full
+                          hover:bg-blue-400 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105
+                          focus:outline-none focus:ring-4 focus:ring-blue-200 focus:ring-offset-2 focus:ring-offset-blue-100">
                     <span class="font-bold text-lg sm:text-xl">Agente Lia</span>
                     <span class="text-sm sm:text-base opacity-90">Odontoponto</span>
                     <!-- O número de telefone foi removido daqui -->
@@ -46,9 +58,9 @@
             <!-- Bloco para Agente Diana -->
             <div class="flex flex-col items-center bg-green-100 rounded-xl shadow-lg p-4 mb-4">
                 <a href="https://wa.me/5511970921408" target="_blank"
-                   class="flex flex-col items-center justify-center bg-green-200 text-green-800 py-4 px-6 rounded-lg w-full
-                          hover:bg-green-300 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105
-                          focus:outline-none focus:ring-4 focus:ring-green-100">
+                   class="flex flex-col items-center justify-center bg-emerald-300 text-emerald-900 py-4 px-6 rounded-lg w-full
+                          hover:bg-emerald-400 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105
+                          focus:outline-none focus:ring-4 focus:ring-emerald-200 focus:ring-offset-2 focus:ring-offset-emerald-100">
                     <span class="font-bold text-lg sm:text-xl">Agente Diana</span>
                     <span class="text-sm sm:text-base opacity-90">Next Odonto</span>
                     <!-- O número de telefone foi removido daqui -->
@@ -58,9 +70,9 @@
             <!-- Bloco para Agente Carla -->
             <div class="flex flex-col items-center bg-purple-100 rounded-xl shadow-lg p-4 mb-4">
                 <a href="https://wa.me/5561995748559" target="_blank"
-                   class="flex flex-col items-center justify-center bg-purple-200 text-purple-800 py-4 px-6 rounded-lg w-full
-                          hover:bg-purple-300 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105
-                          focus:outline-none focus:ring-4 focus:ring-purple-100">
+                   class="flex flex-col items-center justify-center bg-indigo-300 text-indigo-900 py-4 px-6 rounded-lg w-full
+                          hover:bg-indigo-400 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105
+                          focus:outline-none focus:ring-4 focus:ring-indigo-200 focus:ring-offset-2 focus:ring-offset-indigo-100">
                     <span class="font-bold text-lg sm:text-xl">Agente Carla</span>
                     <span class="text-sm sm:text-base opacity-90">Taguatinga</span>
                     <!-- O número de telefone foi removido daqui -->
@@ -70,9 +82,9 @@
             <!-- Bloco para Agente Bia -->
             <div class="flex flex-col items-center bg-red-100 rounded-xl shadow-lg p-4 mb-4">
                 <a href="https://wa.me/5561981698868" target="_blank"
-                   class="flex flex-col items-center justify-center bg-red-200 text-red-800 py-4 px-6 rounded-lg w-full
-                          hover:bg-red-300 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105
-                          focus:outline-none focus:ring-4 focus:ring-red-100">
+                   class="flex flex-col items-center justify-center bg-rose-300 text-rose-900 py-4 px-6 rounded-lg w-full
+                          hover:bg-rose-400 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105
+                          focus:outline-none focus:ring-4 focus:ring-rose-200 focus:ring-offset-2 focus:ring-offset-rose-100">
                     <span class="font-bold text-lg sm:text-xl">Agente Bia</span>
                     <span class="text-sm sm:text-base opacity-90">Águas Lindas</span>
                     <!-- O número de telefone foi removido daqui -->
